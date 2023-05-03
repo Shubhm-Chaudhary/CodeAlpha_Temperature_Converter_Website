@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Temperature Conversion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<h1>Temperature Converter</h1>
+		</header>
+		<form>
+			<div class="container2">
+				<input type="number" id="temperature" name="temperature" placeholder="Enter Temperature Here">
+
+				<select id="from" name="from">
+					<option>Select</option>
+					<option value="celsius">Celsius</option>
+					<option value="fahrenheit">Fahrenheit</option>
+					<option value="kelvin">Kelvin</option>
+				</select>
+
+			</div>
+			<br></br>
+			<div class="container3">
+				<label for="to">Convert To:</label>
+				<select id="to" name="to">
+					<option>Select</option>
+					<option value="celsius">Celsius</option>
+					<option value="fahrenheit">Fahrenheit</option>
+					<option value="kelvin">Kelvin</option>
+				</select>
+			</div><br><br>
+			<button type="button" onclick="convertTemperature()">Convert</button>
+			<br>
+			<p id="result"></p>
+		</form>
+
+	</div>
+	<footer>
+		<p>Copyright © Shubham Chaudhary
+
+		</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
